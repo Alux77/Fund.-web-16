@@ -1,0 +1,22 @@
+    <head>
+    <link href="https://fonts.googleapis.com/css?family=Cagliostro" rel="stylesheet">
+    </head>
+
+<body>
+    <br>
+  <td id='ttl'><h2> EDIT ME WEY! </h2></td>
+
+  <p><h3><%= @post.tittle %></h3>
+
+  <form action="/update/<%= @post.id %>" method='post'>
+    <p>
+    <input id='tt_nw' type='text' name='tittle_nw' value='<%= @post.tittle %>' required>
+    <p>
+    <textarea id='bd_nw' name='body_nw' rows="5" required><%= @post.body %></textarea>
+    <p>
+    <input id='upd' type='submit' value='update'>
+  </form>
+
+    <br>
+
+</body>

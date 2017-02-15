@@ -1,0 +1,58 @@
+  <head>
+  <link href="https://fonts.googleapis.com/css?family=Cagliostro" rel="stylesheet">
+  </head>
+
+<body>
+
+  <script>
+    $(document).ready(function(){
+      $("#edt").click(function(){
+      $("#nxt").slideToggle(1500);
+      });
+    });
+  </script>
+
+  <h2 id='logo'>ANONYMOUS BLOG</h2>
+  <br>
+  <br>
+
+  <table class='posts'>
+    <tr>
+      <td><h2 id='tit'>
+        <%= @post.tittle %>
+      </h2></td>
+    </tr>
+
+    <tr>
+      <td><h2 id='pst_dte'>
+        &#62; <%= @post.created_at.strftime("%h : %d : %Y") %> &#60;
+      </h2></td>
+    </tr>
+    <tr>
+      <td><h2 id='bod'>
+        <p align="justify"><%= @post.body %></p>
+      </h2></td>
+    </tr>
+  </table>
+
+    <br>
+    <br>
+
+  <table class='buttons'>
+      <th><button id='edt' type="submit">edit</button></th>
+
+      <th><form action="/create" method='get'>
+        <button id='bck' type="submit">back</button></form></th>
+
+      <th><form action="/delete/<%= @post.id %>" method='get'>
+        <button id='bye' type="submit">bye</button></form></th>
+
+      <th><form action="" method='post'></form>
+        <button id='cmmts' type="submit" value="comment?">comment?</button></th>
+  </table>
+
+    <br>
+
+  <span id='nxt'><%= erb :editing_posts %></span>
+
+</body>

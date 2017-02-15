@@ -1,0 +1,203 @@
+.container
+{
+  margin: 50px auto;
+  width: 450px;
+  height: 100px;
+  padding: 0px 20px 20px 20px;
+/* -------------border----------------------*/
+  border: 2px dotted grey;
+  border-radius: 100px;
+  text-align: right;
+/* -------------background----------------------*/
+  background-color: black;
+  background-image: url("http://s1.picswalls.com/wallpapers/2015/09/27/anonymous-backgrounds_123830959_275.jpg");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+/* -------------border ends----------------*/
+}
+
+body
+{ /* toda el contenido */
+  background-color: black;
+}
+
+#logo
+{ /* tipografía grande - titulo */
+  text-align: center;
+  font-family: 'Cagliostro', sans-serif;
+  font-size: 43px;
+  color: white;
+  opacity: .2;
+}
+
+#enter
+{
+  position: fixed;
+  left: 718px;
+}
+#enter:link
+{
+  font-size: 10px;
+  font-family: 'Cagliostro', sans-serif;
+  color: white;
+  text-decoration: none;
+}
+#enter:hover
+{
+  color: #595959;
+}
+#enter:visited
+{
+  color: #a6a6a6;
+}
+
+/*----- formulario ----------------------------*/
+h2
+{ /* titulo de POST */
+  text-align: center;
+  font-family: 'Cagliostro', sans-serif;
+  color: #AEAEAE;
+}
+
+h3
+{ /* titulo de la lista de POST */
+  text-align: center;
+  font-family: 'Cagliostro', sans-serif;
+  color: #AEAEAE;
+}
+
+h4
+{ /* titulo de la lista de POST */
+  text-align: center;
+  font-family: 'Cagliostro', sans-serif;
+  color: #AEAEAE;
+  opacity: .2;
+}
+
+table.list
+{
+  text-align: left;
+}
+table.posts
+{
+  text-align: left;
+}
+#bod
+{ /* cuerpo de la lista de POST */
+  text-align: left;
+  font-family: 'Cagliostro', sans-serif;
+  color: #AEAEAE;
+  opacity: .4;
+}
+#tit
+{
+  font-family: 'Cagliostro', sans-serif;
+  opacity: .3;
+}
+#bye_pst
+{
+  text-decoration: none;
+  font-family: 'Cagliostro', sans-serif;
+  color: grey;
+  opacity: .2;
+}
+
+#tittle, #body
+{ /* forms */
+  width: 30%;
+  border-radius: 10px;
+  position: absolute;
+  left: 520px;
+  border: 2px dotted grey;
+  background: transparent;
+}
+
+#sbmit
+{ /* botón got it */
+  color: grey;
+  width: 4%;
+  border-radius: 15px;
+  position: absolute;
+  top: 343px;
+  left: 1000px;
+  background-color: #1a1a1a;
+  border: none;
+}
+#rst
+{ /* botón erase */
+  color: grey;
+  width: 4%;
+  border-radius: 15px;
+  position: absolute;
+  top: 343px;
+  left: 420px;
+  background-color: #1a1a1a;
+  border: none;
+}
+
+::-webkit-input-placeholder
+{ /* texto interior de forms */
+  color: grey;
+  opacity: .5;
+  text-align: center;
+}
+
+input, textarea
+{
+  color: grey;
+  opacity: .5;
+}
+
+/*----- boton de editar posts ----------------------------*/
+#tit
+{
+  font-family: 'Cagliostro', sans-serif;
+  color: #ff9933;
+  text-decoration: none;
+}
+
+/*#edt, #bck', #bye, #cmmts*/.buttons
+{ /* presentación de botones */
+  border: none;
+  border-radius: 15px;
+  background-color: #1a1a1a;
+  color: grey;
+  position: relative;
+  left: 115px;
+  opacity: .2;
+}
+
+#pst_dte
+{
+  font-family: 'Cagliostro', sans-serif;
+  font-size: 13px;
+  color: #AEAEAE;
+  opacity: .2;
+}
+
+form
+{
+  text-align: center;
+}
+
+span
+{
+  display: none;
+}
+
+#tt_nw, #bd_nw
+{ /* forms */
+  width: 100%;
+  border-radius: 10px;
+  border: 2px dotted grey;
+  background: transparent;
+}
+
+#tt, #cmmt
+{ /* forms */
+  width: 100%;
+  border-radius: 10px;
+  border: 2px dotted grey;
+  background: transparent;
+}

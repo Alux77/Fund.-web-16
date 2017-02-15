@@ -1,0 +1,30 @@
+<body>
+
+  <head>
+  <link href="https://fonts.googleapis.com/css?family=Cagliostro" rel="stylesheet">
+  </head>
+
+  <h2 id='logo'>ANONYMOUS BLOG</h2>
+  <br>
+  <br>
+
+<form action="/create" method='post'>
+  <h2>CREATE A POST</h2>
+  <input id='tittle' type="text" name="tittle" placeholder="tittle..." autocomplete="off" required>
+  <br>
+  <br>
+  <textarea id='body' name='body' placeholder="description..." rows="5" autocomplete="off" required></textarea>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <input id='sbmit' type="submit" value="go it">
+  <input id='rst' type="reset" value="erase">
+  <br>
+</form>
+
+  <p><%= erb :post_list %></p> 
+
+</body>

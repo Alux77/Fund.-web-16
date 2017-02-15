@@ -1,0 +1,25 @@
+  <h2>ALL POST</h2>
+  <% if @post.empty? %>
+    <h4>Por ahora no hay posts registrados...</h4>
+  <% else %>
+    <% @post.each do |pst| %>
+
+      <table class='list'>
+
+        <tr>
+        <td><a id='tit' href="/show/<%= pst.id %>">POST: <%= pst.tittle %> / #<%= pst.id %></a></td>
+        </tr>
+
+        <tr>
+        <td id='bod'><p align="justify"><%= pst.body %></p></td>
+        </tr>
+
+        <tr>
+        <td><a id='bye_pst' href="/delete/<%= pst.id %>">eliminate</a></td>
+        </tr>
+
+      </table>
+        <br>
+        <br>
+    <% end %>
+  <% end %>
